@@ -1,1 +1,2 @@
-# The DevOps course
+# DevOps task
+The DevOps course
