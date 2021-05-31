@@ -1,5 +1,7 @@
 # All about me
-My name is Artur. I am Head of IT Department.
+My name is Artur. 
+I am Head of IT Department.
+
 I love new IT devices and software. I constantly update both of them, if something better comes out.
 I like to walk and ride a road bike, always accompanied by music.
 Recently I started a new hobby - a freshwater aquarium.
