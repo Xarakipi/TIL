@@ -1,3 +1,3 @@
 # TIL = Today I've Learned
 ***
-**Repository as a blog**
+**GitHub repository as a blog**
