@@ -1,2 +1,2 @@
-# DevOps task
+# DevOps
 [ANDERSEN](https://www.andersenlab.com) DevOps course
