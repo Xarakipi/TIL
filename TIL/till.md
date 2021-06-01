@@ -13,4 +13,4 @@ Today I learned
 ***
 Today I learned
 * Wekan Kanban server
-* 
+* Difference between web github and git bash
