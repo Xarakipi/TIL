@@ -8,3 +8,9 @@ Today I learned
 * The history of DevOps and its future
 * DevOps models
 * GitHub
+
+## 2021.06.01
+***
+Today I learned
+* Wekan Kanban server
+* 
