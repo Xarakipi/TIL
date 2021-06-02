@@ -21,4 +21,5 @@ Today I learned
 ***
 Today I learned
 * How to make espresso
-* 
+* Remember to set limits on AWS
+* What the flower Nymphaea Rudgeana looks like
