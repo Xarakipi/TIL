@@ -16,3 +16,9 @@ Today I learned
 * Difference between web github and git bash
 * What is gpg signed commit
 * How change gpg key for signing commit
+
+## 2021.06.02
+***
+Today I learned
+* How to make espresso
+* 
