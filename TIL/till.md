@@ -32,3 +32,14 @@ Today I learned
 * Palo Alto FW functionality
 * I read a post about flask on Habr
 * How to change the brake fluid in the hydraulic brake on a road bike
+
+## 2021.06.04
+***
+Today I learned
+* What are the best conditions for Cambarellus montezumae. How to create and maintain these conditions
+![](http://a.radikal.ru/a17/2106/da/03ba9aef8007.jpg)
+
+## 2021.06.03
+***
+Today I learned
+* Balanced Armature Drivers headphones are really cool 
