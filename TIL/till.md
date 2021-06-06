@@ -43,3 +43,8 @@ Today I learned
 ***
 Today I learned
 * Balanced Armature Drivers headphones are really cool 
+
+## 2021.06.06
+***
+Today I learned
+*  I read a post about ansible on Habr
