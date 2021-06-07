@@ -48,3 +48,8 @@ Today I learned
 ***
 Today I learned
 *  I read a post about ansible on Habr
+
+## 2021.06.07
+***
+Today I learned
+* A lot of information about ansible
