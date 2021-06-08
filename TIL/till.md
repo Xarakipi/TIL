@@ -53,3 +53,9 @@ Today I learned
 ***
 Today I learned
 * A lot of information about ansible
+
+## 2021.06.08
+***
+Today I learned
+* The difference between su and su-
+* 
