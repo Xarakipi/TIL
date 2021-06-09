@@ -2,13 +2,18 @@
 ***
 * Remote host requirements and preparation:
 Fresh installed Debian 10 minimal and SSH Server with users: 'root'+password and 'debian'+password
+
 ====================================
+
 * You must use your user instead 'debian'
+
 ====================================
+
 * Local host preparation:
 Installed python3 and pip3
 Installed ansible
 Add Remote host(IP) to ansible servers list '/etc/ansible/hosts'
+
 ====================================
 ## Unprepared servers. By default, Debian 10 minimal server doesn't have "sudo" and ssh access for 'root'. Default first user 'debian' doesn't have sudo access.
 ## If Debian 10 minimal installed without password for root you can skip this step
