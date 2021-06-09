@@ -41,6 +41,8 @@ Deb10_IP | SUCCESS => {
 }
 ====================================
 ## Download and use hostprepare.yml
+This ansible playbook install sudo and add user debian to sudoers
+$ ansible-playbook hostprepare.yml --ask-become-pass
 ====================================
 Test ansible connection after hostprepare.yml
 $ ansible rserver1 -m ping
