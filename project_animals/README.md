@@ -49,9 +49,9 @@ ansible_user=debian
 
 * By default, Debian 10 minimal server doesn't have "sudo" and ssh access for 'root'. Default first user 'debian' doesn't have sudo access.
 
-* **If Debian 10 minimal installed without password for root you can skip this step.**
+* **If Debian 10 minimal installed without password for root you should pass both tests without errors.**
 
-Test ansible connection to fresh Deb10 server.
+Test 1. Ansible connection to fresh Deb10 server.
 
 ```
 $ ansible fserver1 -m ping
@@ -65,7 +65,7 @@ Deb10_IP | SUCCESS => {
     "ping": "pong"}
 ```
 
-Test ansible connection to fresh Deb10 server.
+Test 2. Ansible connection to fresh Deb10 server.
 
 ```
 $ ansible rserver1 -m ping
