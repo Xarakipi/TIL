@@ -58,4 +58,9 @@ Today I learned
 ***
 Today I learned
 * The difference between su and su-
-* 
+
+ 
+## 2021.06.09
+***
+Today I learned
+* awk
