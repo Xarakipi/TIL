@@ -1,11 +1,11 @@
 # Project Animals
 ***
-Remote host requirements and preparation:
+* Remote host requirements and preparation:
 Fresh installed Debian 10 minimal and SSH Server with users: 'root'+password and 'debian'+password
 ====================================
-You must use your user instead 'debian'
+* You must use your user instead 'debian'
 ====================================
-Local host preparation:
+* Local host preparation:
 Installed python3 and pip3
 Installed ansible
 Add Remote host(IP) to ansible servers list '/etc/ansible/hosts'
