@@ -1,0 +1,15 @@
+---
+
+- hosts: firstservers
+  tasks:
+  - name: Install sudo
+    ansible.builtin.package:
+      name: sudo
+      state: present
+    become: yes
+    become_method: su
+  - name: Add user 'debian' to sudo
+    command: usermod -aG sudo debian
+    become: yes
+    become_method: su
+    become_exe: 'su -'
