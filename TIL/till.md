@@ -64,3 +64,9 @@ Today I learned
 ***
 Today I learned
 * awk
+
+## 2021.06.09
+***
+Today I learned
+* mawk, sed
+* How to configure Huawei Dorado.
