@@ -65,7 +65,7 @@ Today I learned
 Today I learned
 * awk
 
-## 2021.06.09
+## 2021.06.10
 ***
 Today I learned
 * mawk, sed
