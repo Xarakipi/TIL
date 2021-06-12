@@ -57,7 +57,7 @@ do
 done
 ### Other WhoIs information
 printf "%s\n" "Want to see other WhoIs information?" "You need to enter the exact name of the required information"
-read -p "Enter the name of the required information. Default nothing: " other_wip_info
+read -p "Enter the name of the required information(default nothing): " other_wip_info
 printf "$format" Count "IP Address" Status "WhoIs Organization/Descr" "$other_wip_info"
 printf "%s\n" "==========================================================================================================="
 ### Get netstat and look for lines from it where there is data entered in name_pid and display connection count ip status
