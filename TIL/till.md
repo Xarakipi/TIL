@@ -70,3 +70,13 @@ Today I learned
 Today I learned
 * mawk, sed
 * How to configure Huawei Dorado.
+
+## 2021.06.11
+***
+Today I learned
+* That there is a site with [awk online](https://awk.js.org)
+
+## 2021.06.12
+***
+Today I learned
+* That you should go to the dentist more often for preventive care
