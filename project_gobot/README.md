@@ -6,7 +6,7 @@
 
 ***
 
-* Write Telegram bot in Go language that will show my GitHub repository and tasks
+* Create Telegram bot in Go language that will show my GitHub repository and tasks
 
 * Bot must understand these 3 commands
 
@@ -48,4 +48,10 @@ Open [@Project_GoBot](https://t.me/Project_GoBot)
 
 * Create bot project dir
 
-* Create bot config file
+* Create bot config file *.go
+
+* Run the project config file.
+
+  ```
+  # go run project_gobot.go
+  ```
