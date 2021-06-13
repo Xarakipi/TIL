@@ -55,3 +55,10 @@ Open [@Project_GoBot](https://t.me/Project_GoBot)
   ```
   # go run project_gobot.go
   ```
+
+## To Do
+
+***
+
+* Error messages with hints from the bot
+* Need to come up with something on /task# command. Judging by the logs, it is not obvious that you have to type /task1, /task2, etc.
