@@ -10,9 +10,35 @@
 # wip2 - WhoIs IP with other requested information
 # format - format of output results
 # other_wip_info - other whois information
+# xcommand - choise netstat or ss
+# xpid - PID/Program name column in netstat or ss
+# xip - IP column in netstat or ss
+# xstate - Connection state column in netstat or ss
+# xns - command netstat or ss with arguments
 ###
 x=1
 format="%-7s %-17s %-15s %-50s %s\n"
+### Choice netstat or ss
+printf "%s\n" "Which command do you want to use, 'netstat' or 'ss'(default 'netstat')?" "'1' for use 'netstat'" "'2' for use 'ss'"
+read -p "Enter your choise number 1/2 (default 1 for 'netstat'): " xcommand
+while ! [[ $xcommand = 1 || $xcommand = 2 || $xcommand = "" ]]
+do
+  read -p "Enter your choise number '1' for 'netstat' or '2' for 'ss': " xcommand
+done
+if [[ $xcommand = "2" ]]
+  then
+      xpid=7
+      xip=6
+      xstate=2
+      xns="ss -4ap"
+      echo "The command will be used 'ss'"
+  else
+      xpid=7
+      xip=5
+      xstate=6
+      xns="netstat -tunapl"
+      echo "The command will be used 'netstat'"
+fi
 ### Privilege escalation request
 printf "%s\n" "Run script from sudo user?" "You need root privileges to see all information"
 read -p "Enter 'y' or 'n' (default n(No)): " sudo_user
@@ -37,7 +63,7 @@ name_pid=$(echo $name_pid | tr [[:upper:]] [[:lower:]])
 ### Checking the existence of the requested process
 if [[ ! -z $name_pid ]]
   then
-      cname_pid=$($sudo_user netstat -tunapl 2>/dev/null | awk '/'$name_pid'/ {print $7; exit}')
+      cname_pid=$($sudo_user $xns 2>/dev/null | awk '/'$name_pid'/ {print $'$xpid'; exit}')
       if [[ ! -z $cname_pid ]]
         then
 ### Request number of output results
@@ -62,7 +88,7 @@ read -p "Enter the name of the required information(default nothing): " other_wi
 printf "$format" Count "IP Address" Status "WhoIs Organization/Descr" "$other_wip_info"
 printf "%s\n" "==========================================================================================================="
 ### Get netstat and look for lines from it where there is data entered in name_pid and display connection count ip status
-$sudo_user netstat -tunapl 2>/dev/null | mawk '/'$name_pid'/ {ip=$5; sub(/:[^:]+/,"",ip); state=$6; if($5 ~ /^[0-9]/ && $6 !~ /^[0-9]/ && $7 ~ '$name_pid' ) print ip, state}' | sort | uniq -c | sort | while read count ip status
+$sudo_user $xns 2>/dev/null | mawk '/'$name_pid'/ {ip=$'$xip'; sub(/:[^:]+/,"",ip); state=$'$xstate'; if($'$xip' ~ /^[0-9]/ && $'$xstate' !~ /^[0-9]/ && $'$xpid' ~ '$name_pid' ) print ip, state}' | sort | uniq -c | sort | while read count ip status
 do
   if [[ $x -le $lines_number ]]
     then
