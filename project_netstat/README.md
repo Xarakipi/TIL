@@ -45,7 +45,7 @@ Enter PID/Program name: firefox
 Enter number of output results: 20
 Want to see other WhoIs information?
 You need to enter the exact name of the required information
-Enter the name of the required information. Default nothing: Address
+Enter the name of the required information(default nothing): Address
 Count   IP Address        Status          WhoIs Organization/Descr                           Address
 ===========================================================================================================
 1       159.69.59.100     ESTABLISHED     RIPE Network Coordination Centre (RIPE)            P.O. Box 10096

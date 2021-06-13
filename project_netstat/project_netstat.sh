@@ -7,6 +7,7 @@
 # lines_number - number of output results
 # x - for counter function lines_number
 # wip - WhoIs IP
+# wip2 - WhoIs IP with other requested information
 # format - format of output results
 # other_wip_info - other whois information
 ###
