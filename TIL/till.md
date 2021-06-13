@@ -80,3 +80,9 @@ Today I learned
 ***
 Today I learned
 * That you should go to the dentist more often for preventive care
+
+## 2021.06.13
+***
+Today I learned
+* GoLang
+* Golang API for telegram
