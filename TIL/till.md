@@ -86,3 +86,13 @@ Today I learned
 Today I learned
 * GoLang
 * Golang API for telegram
+
+## 2021.06.14
+***
+Today I learned
+* Git Best Practice
+
+## 2021.06.15
+***
+Today I learned
+* I like MacOS and it looks like I'll be buying an apple product for the first time
