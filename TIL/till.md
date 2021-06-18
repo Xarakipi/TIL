@@ -96,3 +96,18 @@ Today I learned
 ***
 Today I learned
 * I like MacOS and it looks like I'll be buying an apple product for the first time
+
+## 2021.06.16
+***
+Today I learned
+* I should update Unifi AP-LR access points. End of Support
+
+## 2021.06.17
+***
+Today I learned
+* A little bit about python
+
+## 2021.06.18
+***
+Today I learned
+* That the time machine exists only in theory... Too bad, I could have used it XD
