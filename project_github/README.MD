@@ -19,3 +19,14 @@
 * [Have a look here](https://github.com/trending)
 * read about GitHub API
 * make use of curl and jq
+
+### How it works
+Run script 
+
+```
+
+python3 project_github.py 
+
+```
+
+and answer questions.
