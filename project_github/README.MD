@@ -20,13 +20,23 @@
 * read about GitHub API
 * make use of curl and jq
 
+### Requirements
+* python3
+* installed python3-pip
+```
+apt install python3-pip
+```
+* installed with pip3 modules 'requests', 'tabulate'
+```
+pip3 install requests
+pip3 install tabulate
+```
+
 ### How it works
 Run script 
 
 ```
-
 python3 project_github.py 
-
 ```
 
 and answer questions.
