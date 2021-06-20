@@ -116,3 +116,8 @@ Today I learned
 ***
 Today I learned
 * GitHub API have rate limit = 60
+
+## 2021.06.20
+***
+Today I learned
+* You cannot view all RPs with a limit of 60 requests in the GitHub API if the requests are more than 60 pages at 100 requests per page
