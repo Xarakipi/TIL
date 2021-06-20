@@ -111,3 +111,8 @@ Today I learned
 ***
 Today I learned
 * That the time machine exists only in theory... Too bad, I could have used it XD
+
+## 2021.06.19
+***
+Today I learned
+* GitHub API have rate limit = 60
