@@ -15,9 +15,10 @@ def check_url(link, params):
 def most_productive_authors(user, repo):
     page_list = int(input('Enter number of the last Pull Request. (multiple of 100) : '))
     page_list = int(page_list/100)
+    state = input('Enter Pull Requests state(open, closed, or all)(default 'open'): ')
     uniq_authors = {}
     for i in range(0, page_list):
-        params = {'per_page': 100, 'page': i, 'state': 'all'}
+        params = {'per_page': 100, 'page': i, 'state': state}
         check_link = check_url(f"https://api.github.com/repos/{user}/{repo}/pulls", params)
         for link in check_link.json():
             author = link['user']['login']
