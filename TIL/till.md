@@ -121,3 +121,18 @@ Today I learned
 ***
 Today I learned
 * You cannot view all RPs with a limit of 60 requests in the GitHub API if the requests are more than 60 pages at 100 requests per page
+
+## 2021.06.21
+***
+Today I learned
+* A little more about python
+
+## 2021.06.22
+***
+Today I learned
+* That I need to start setting myself an audible time reminder again
+
+## 2021.06.23
+***
+Today I learned
+* That in order to test an application, you need to automate the testing process
