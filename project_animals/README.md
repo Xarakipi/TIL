@@ -191,10 +191,10 @@ If the deployment went without errors, then you can test the work:
 
 ```
 
-$ curl -XPOST -d'{"animal":"cow", "sound":"moooo", "count": 3}' https://'Deb10_IP'/
+$ curl -k -XPOST -d'{"animal":"cow", "sound":"moooo", "count": 3}' https://'Deb10_IP'/
 
 
-$ curl -XPOST -d'{"animal":"elephant", "sound":"whoooaaa", "count": 5}' https://'Deb10_IP'/
+$ curl -k -XPOST -d'{"animal":"elephant", "sound":"whoooaaa", "count": 5}' https://'Deb10_IP'/
 
 ```
 
