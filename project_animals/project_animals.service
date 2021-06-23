@@ -1,0 +1,17 @@
+[Unit]
+Description=Flask project_animal service
+After=network.target
+
+[Service]
+Type=simple
+WorkingDirectory=/var/www/project_animals/project_animals/
+Environment=FLASK_APP=/var/www/project_animals/project_animals/project_animals.py
+Environment=FLASK_RUN_PORT=443
+Environment=FLASK_RUN_CERT=/etc/ssl/private/server.crt
+Environment=FLASK_RUN_KEY=/etc/ssl/private/server.key
+Environment=FLASK_RUN_HOST=0.0.0.0
+ExecStart=/var/www/project_animals/project_animals/bin/flask run
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

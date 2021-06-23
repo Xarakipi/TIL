@@ -1,0 +1,121 @@
+---
+
+- hosts: readyservers
+  become: yes
+  tasks:
+
+  - name: update and upgrade apt packages
+    apt:
+          update_cache: yes
+          upgrade: 'yes'
+          autoremove: yes
+          autoclean: yes
+
+  - name: install pip3 and venv
+    ansible.builtin.package:
+      name: 
+                 - python3-pip
+                 - python3-venv
+      state: present
+
+  - name: generate private key
+    openssl_privatekey:
+      path: /etc/ssl/private/server.key
+      size: 2048
+
+  - name: generate csr
+    openssl_csr:
+      path: /etc/ssl/private/server.csr
+      privatekey_path: /etc/ssl/private/server.key
+
+  - name: generate selfsigned certificate
+    openssl_certificate:
+      provider: selfsigned
+      path: /etc/ssl/private/server.crt
+      privatekey_path: /etc/ssl/private/server.key
+      csr_path: /etc/ssl/private/server.csr
+
+  - name: create directory for project_animals
+    file:
+      path: /var/www/project_animals
+      state: directory
+
+  - name: create the initial virtualenv
+    command:
+      cmd: python3 -m venv /var/www/project_animals/project_animals
+      creates: "/project_animals/project_animals"
+
+  - name: install python packages with the local instance of pip
+    shell: "/var/www/project_animals/project_animals/bin/pip3 install flask"
+
+  - name: install emoji with the local instance of pip
+    shell: "/var/www/project_animals/project_animals/bin/pip3 install emoji"
+
+  - name: copy project_animals.py to server
+    copy: 
+      src: "{{playbook_dir}}/project_animals.py"
+      dest: /var/www/project_animals/project_animals/
+    loop:
+      - ./project_animals.py
+
+  - name: create directory for project_animals html
+    file:
+      path: /var/www/project_animals/project_animals/templates
+      state: directory
+
+  - name: copy cargame.html to server
+    copy:
+      src: "{{playbook_dir}}/cargame.html"
+      dest: /var/www/project_animals/project_animals/templates/
+    loop:
+      - ./cargame.html
+
+  - name: copy flask project_animals.service to server
+    copy:
+      src: "{{playbook_dir}}/project_animals.service"
+      dest: /etc/systemd/system/
+
+  - name: enable flask project_animals.service for run on startup
+    service: 
+      name : project_animals.service
+      enabled: yes
+
+  - name: start flask project_animals.service
+    service: 
+      name: project_animals.service 
+      state: started
+
+  - name: install firewall
+    apt:
+      name: ufw
+      update_cache: true
+
+  - name: allow port ssh
+    ufw:
+      rule: allow
+      port: ssh
+      proto: tcp
+
+  - name: allow port http
+    ufw:
+      rule: allow
+      port: https
+      proto: tcp
+
+  - name: allow port https
+    ufw:
+      rule: allow
+      port: https
+      proto: tcp
+      state: enabled
+
+  - name: copy and replace sshd_config file
+    copy:
+     src  : sshd_config
+     dest : /etc/ssh/
+     force: yes
+
+  - name: sshd restart
+    service:
+      name: sshd
+      state: restarted
