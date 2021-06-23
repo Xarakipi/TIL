@@ -70,6 +70,8 @@ Fresh installed Debian 10 minimal and SSH Server with users: 'root'+password and
 
 * Installed svn
 
+* Installed curl
+
 * Ready ssh keys
 
 ***
@@ -121,7 +123,7 @@ Add ansible-vault for save sudo password of remote host(user 'debian').
 ansible-vault create passwd.yml
 ```
 
-Set the password for vault. After providing a password, append the following
+Set the password for vault. After providing a password, append the following('debian' password)
 
 ```
 ansible_sudo_pass: 'VeryStrongPassword'
@@ -165,6 +167,10 @@ If you get an error on test 2, then run [hostprepare.yml](https://github.com/Xar
 
 This ansible playbook install sudo and add user 'debian' to sudoers
 
+Remember to correct in the file hostprepare.yml at the line "command: usermod -aG sudo debian" the user 'debian' to your
+
+Then run playbook.
+
 ```
 $ ansible-playbook hostprepare.yml --ask-become-pass
 or
@@ -201,3 +207,12 @@ $ curl -k -XPOST -d'{"animal":"elephant", "sound":"whoooaaa", "count": 5}' https
 If the deployment was unsuccessful, then I don't know how to help ... In my lab everything worked without problems ❤️
 
 P.s. Don't forget to look in your browser https://'Deb10_IP'/
+
+
+## To Do
+
+***
+
+* Error messages with hints
+
+* 
