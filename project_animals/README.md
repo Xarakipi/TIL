@@ -181,7 +181,7 @@ $ ansible-playbook hostprepare.yml -K
 
 Enter 'root' password for remote host.
 
-Repeat 'test 2'. If the test is successful, go ahead
+Wait 5 minutes and repeat 'test 2'. If the test is successful, go ahead
 
 If the error persists, try running again:
 
