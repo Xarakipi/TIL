@@ -183,6 +183,16 @@ Enter 'root' password for remote host.
 
 Repeat 'test 2'. If the test is successful, go ahead
 
+If the error persists, try running again:
+
+```
+$ ansible-playbook hostprepare.yml --ask-become-pass
+or
+$ ansible-playbook hostprepare.yml -K
+```
+
+Repeat 'test 2'.
+
 ***
 
 ### Deploy project
