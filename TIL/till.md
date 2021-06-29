@@ -132,7 +132,34 @@ Today I learned
 Today I learned
 * That I need to start setting myself an audible time reminder again
 
-## 2021.06.23
+## 2021.06.24
 ***
 Today I learned
 * That in order to test an application, you need to automate the testing process
+
+## 2021.06.25
+***
+Today I learned
+* How to assemble ikea chairs
+
+## 2021.06.26
+***
+Today I learned
+* Better understanding of how to configure VirtualBox network settings. VMWare Workstation is still more convenient
+
+## 2021.06.27
+***
+Today I learned
+* How to charge a carbon dioxide cylinder correctly
+
+## 2021.06.28
+***
+Today I learned
+* Banana Shrimp is quite survivable, even if it escaped from the aquarium XD
+
+## 2021.06.29
+***
+Today I learned
+* Windows 11 in VM
+
+
