@@ -163,3 +163,77 @@ Today I learned
 * Windows 11 in VM
 
 
+## 2021.06.30
+***
+Today I learned
+* NetApp Ontap S3
+
+## 2021.07.01
+***
+Today I learned
+* NetApp StorageGrid S3
+
+## 2021.07.02
+***
+Today I learned
+* VMware Tanzu architecture, deploy and configuration
+
+## 2021.07.03
+***
+Today I learned
+* How to change voice in xiaomi vacuum cleaner
+
+## 2021.07.04
+***
+Today I learned
+* How to tamp coffee correctly
+
+## 2021.07.05
+***
+Today I learned
+* If you cool the CO2 cylinder, then more carbon dioxide will get into it. The main thing is not more than 70% of the volume
+
+## 2021.07.06
+***
+Today I learned
+* 
+
+## 2021.07.07
+***
+Today I learned
+* VMware vSphere Snapshots, impact on performance
+
+## 2021.07.08
+***
+Today I learned
+* 
+
+## 2021.07.09
+***
+Today I learned
+* SAN Pure storage. Demo configuration and test
+
+## 2021.07.10
+***
+Today I learned
+* 
+
+## 2021.07.11
+***
+Today I learned
+* 
+
+## 2021.07.12
+***
+Today I learned
+* 
+
+## 2021.07.13
+***
+Today I learned
+* 
+
+## 2021.07.14
+***
+Today I learned
+* 
