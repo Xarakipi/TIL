@@ -196,7 +196,7 @@ Today I learned
 ## 2021.07.06
 ***
 Today I learned
-* 
+* Usergate as an alternative to Palo Alto
 
 ## 2021.07.07
 ***
@@ -206,7 +206,7 @@ Today I learned
 ## 2021.07.08
 ***
 Today I learned
-* 
+* VipNet and how it can break esxi
 
 ## 2021.07.09
 ***
@@ -216,12 +216,13 @@ Today I learned
 ## 2021.07.10
 ***
 Today I learned
-* 
+* About Ancistrus Super Red. I saw it in a store and couldn't resist buying it
 
 ## 2021.07.11
 ***
 Today I learned
-* 
+* A really peaceful fish despite its size. Like a whale among small fish
+![](http://d.radikal.ru/d41/2107/56/69625b3575cb.jpg)
 
 ## 2021.07.12
 ***
@@ -237,3 +238,35 @@ Today I learned
 ***
 Today I learned
 * 
+
+## 2021.07.15
+***
+Today I learned
+*
+
+## 2021.07.16
+***
+Today I learned
+*
+
+## 2021.07.17
+***
+Today I learned
+* HoMM III HD the best!
+
+## 2021.07.18
+***
+Today I learned
+* Dangerous game, didn't notice how the weekend passed
+
+## 2021.07.19
+***
+Today I learned
+* The new release VMware Cloud Director
+* LAN Party...
+![](http://c.radikal.ru/c15/2107/5e/35394ac0d8f6.jpg)
+
+## 2021.07.20
+***
+Today I learned
+* NSX-V to NSX-T migration. Plan, what are the disadvantages and advantages.
