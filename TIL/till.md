@@ -227,27 +227,27 @@ Today I learned
 ## 2021.07.12
 ***
 Today I learned
-* 
+* How to flash and calibrate the monitor
 
 ## 2021.07.13
 ***
 Today I learned
-* 
+* How to configure a hikvision video recorder
 
 ## 2021.07.14
 ***
 Today I learned
-* 
+* How to flash SFP+ transceivers
 
 ## 2021.07.15
 ***
 Today I learned
-*
+* Residents can make a recreation area on the roof of an apartment building, but need the consent of all tenants
 
 ## 2021.07.16
 ***
 Today I learned
-*
+* How the wake on lan works and how to configure it
 
 ## 2021.07.17
 ***
@@ -258,13 +258,13 @@ Today I learned
 ***
 Today I learned
 * Dangerous game, didn't notice how the weekend passed
+* LAN Party...
+![](http://c.radikal.ru/c15/2107/5e/35394ac0d8f6.jpg)
 
 ## 2021.07.19
 ***
 Today I learned
 * The new release VMware Cloud Director
-* LAN Party...
-![](http://c.radikal.ru/c15/2107/5e/35394ac0d8f6.jpg)
 
 ## 2021.07.20
 ***
