@@ -33,3 +33,5 @@ sudo docker run -d -p 80:80 project_web1
 ```
 
 Open in your browser http://localhost/
+
+Test Jenkins
