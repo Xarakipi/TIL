@@ -1,0 +1,85 @@
+---
+
+- hosts: readyservers
+  become: yes
+  tasks:
+
+  - name: update and upgrade apt packages
+    apt:
+          update_cache: yes
+          upgrade: 'yes'
+          autoremove: yes
+          autoclean: yes
+
+  - name: Install prerequisites for Docker repository
+    apt:
+      pkg:
+      - apt-transport-https
+      - ca-certificates
+      - curl
+      - gnupg2
+      - software-properties-common
+      - lsb-release
+
+  - name: add docker apt key
+    apt_key:
+      url: https://download.docker.com/linux/ubuntu/gpg
+      state: present
+
+  - name: add docker apt repo
+    apt_repository:
+      repo: "deb [arch=amd64] https://download.docker.com/linux/{{ ansible_distribution|lower }} {{ ansible_distribution_release }} stable"
+      state: present
+      update_cache: yes
+  
+  - name: install docker and it's dependencies
+    apt:
+      pkg:
+        - docker-ce
+        - docker-ce-cli
+        - containerd.io
+      state: present
+
+  - name: start and enable docker daemon
+    service:
+      name: docker
+      state: started
+      enabled: yes
+      
+  - name: Add user 'ubuntu' to docker
+    command: usermod -aG docker ubuntu
+    
+  - name: install firewall
+    apt:
+      name: ufw
+      update_cache: true
+
+  - name: allow port ssh
+    ufw:
+      rule: allow
+      port: ssh
+      proto: tcp
+
+  - name: allow port http
+    ufw:
+      rule: allow
+      port: https
+      proto: tcp
+
+  - name: allow port https
+    ufw:
+      rule: allow
+      port: https
+      proto: tcp
+      state: enabled
+
+  - name: copy and replace sshd_config file
+    copy:
+     src  : sshd_config
+     dest : /etc/ssh/
+     force: yes
+
+  - name: sshd restart
+    service:
+      name: sshd
+      state: restarted
