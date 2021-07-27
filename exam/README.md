@@ -38,3 +38,30 @@ A finished lab that you can demonstrate. A presentation to defend the solution. 
 - Utilization of logging services
 - Checking application's automatic tests (if implemented)
 - Write README.md
+
+## Project repositories:
+
+* [Repo project_web1](https://github.com/Xarakipi/project_web1)
+* [Repo project_web2](https://github.com/Xarakipi/project_web2)
+
+## Описание рабочей среды:
+
+* Есть IaaS в облаке, на основе VMWare vCloud Director, NSX-V и несколько Public IP.
+* В облаке создан шаблон ВМ с чистой ОС Ubuntu 20.04 Server. В шаблон интегрирован ssh public key
+* GitHub репозитории, где хранятся необходимые для работы файлы и приложения
+* Рабочее место с ОС Ubuntu 21.04 Desktop, где установлен и настроен:
+  - Git и настроено подключение к своему аккаунту по GPG Key
+  - Terraform и модуль для vCloud Director
+  - Ansible и настроен его hosts
+  - Jenkins с доступом из интернета
+* Чашка кофе
+
+
+
+------
+
+### Deploy project
+
+------
+
+1. [Project_TerraForm](https://github.com/Xarakipi/TIL/tree/main/exam/project_terraform)
