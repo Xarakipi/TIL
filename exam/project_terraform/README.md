@@ -45,7 +45,7 @@ terraform init
 terraform apply -var-file=vcd.tfvars
 ```
 
-Whait... Have a coffee ☕
+Wait... Have a coffee ☕
 
 Go to ansible directory
 
