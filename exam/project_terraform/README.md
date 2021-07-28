@@ -2,28 +2,6 @@
 
 ***
 
-## Terraforming a Planet for Dummies
-
-Here I will tell you how to terraform the planet Mars
-
-### Requirements:
-
-* The bot factory as a service
-* Bots template
-
-### Creating and customizing bots
-
-* Creating bots from template
-* Assemble the bots using Ansible
-* Jenkins for updating the firmware and software of the bots
-
-Someday...
-
-![](http://b.radikal.ru/b40/2107/5c/ea7d2c31a0d7.jpg)
-
-But for now, let's start small - app with "Hello World!"
-
-
 ### Remote host requirements and preparation:
 
 * IaaS vCloud Director from provider and parameters for vcd.tfvars
