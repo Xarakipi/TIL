@@ -2,6 +2,8 @@
 
 ***
 
+![](http://c.radikal.ru/c32/2107/58/e90275b9f3b5.png)
+
 ### Remote host requirements and preparation:
 
 * IaaS vCloud Director from provider and parameters for vcd.tfvars
